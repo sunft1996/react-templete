@@ -54,7 +54,8 @@ module.exports = smp.wrap({
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',       //生成的文件名
-            chunks: ['index']
+            chunks: ['index'],
+            favicon:'./public/favicon.png'
         }),
         new MiniCssExtractPlugin({
             //使用contenthash，根据css的内容生成hash
